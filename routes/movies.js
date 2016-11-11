@@ -13,27 +13,81 @@ router.get('/', function (req, res, next) {
         .filter({})
         .slice(limit * (page - 1), limit * (page))
         .run().then(function(result){
-            res.send(result);
+            res.send(302, result);
         }).error(function(err){
             console.log(err)
-            res.send([]);
+            res.send(404, []);
         });
 });
 
 router.get('/:id', function (req, res, next) {
-    res.send('respond with a resource');
+    Movie.filter({id: req.params.id})
+        .run()
+        .then(function(result){
+            res.send(302, result);
+        }).error(function(err){
+            console.log(err)
+            res.send(404, []);
+        })
 });
 
 router.post('/', function (req, res, next) {
-    res.send('respond with a resource');
+    var movie = new Movie({
+        title : req.body.title,
+        release_year : req.body.release_year,
+        locations: req.body.locations,
+        fun_facts: req.body.fun_facts,
+        production_company: req.body.production_company,
+        distributor: req.body.distributor,
+        director: req.body.director,
+        writer: req.body.writer,
+        actor_1: req.body.actor_1,
+        actor_2: req.body.actor_2,
+        actor_3: req.body.actor_3
+    });
+
+    movie.save().then(function(result){
+        res.send(200, result)
+    }).error(function(err){
+        res.send(502, err);
+    });
 });
 
 router.put('/:id', function (req, res, next) {
-    res.send('respond with a resource');
+    var movie = new Movie({
+        title : req.body.title,
+        release_year : req.body.release_year,
+        locations: req.body.locations,
+        fun_facts: req.body.fun_facts,
+        production_company: req.body.production_company,
+        distributor: req.body.distributor,
+        director: req.body.director,
+        writer: req.body.writer,
+        actor_1: req.body.actor_1,
+        actor_2: req.body.actor_2,
+        actor_3: req.body.actor_3,
+        id: req.params.id
+    });
+
+    movie.save().then(function(result){
+        res.send(200, result)
+    }).error(function(err){
+        res.send(502, err);
+    });
 });
 
 router.delete('/:id', function (req, res, next) {
-    res.send('respond with a resource');
+    Movie.get(req.params.id).then(function(movie){
+        movie.delete().then(function(result){
+            res.send(200, result)
+        }).error(function(err){
+            res.send(502, err)
+            console.log(err)
+        }).error(function(err){
+            res.send(502, err)
+            console.log(err)
+        });
+    })
 });
 
 module.exports = router;
