@@ -61,3 +61,11 @@
 2016-11-11T11:42:33.393892950 2853.081839s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 1.
 2016-11-11T11:42:33.396118740 2853.084065s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 1. Latest log index is 0.
 2016-11-11T11:44:02.291860312 2941.979806s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Configuration is changing.
+2016-11-11T14:42:38.815843104 8919.746363s info: Table a7a63e47-6f00-4fc2-b759-83764a650636: Starting a new Raft election for term 1.
+2016-11-11T14:42:38.816418375 8919.746938s info: Table a7a63e47-6f00-4fc2-b759-83764a650636: Added replica on this server.
+2016-11-11T14:42:38.822076499 8919.752596s info: Table a7a63e47-6f00-4fc2-b759-83764a650636: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T14:42:39.085340989 8920.015861s info: Table a7a63e47-6f00-4fc2-b759-83764a650636: Configuration is changing.
+2016-11-11T15:05:04.905792804 10265.836313s notice: Removing file /home/dean/CodeRepos/sf-movies-server/rethinkdb_data/a7a63e47-6f00-4fc2-b759-83764a650636
+2016-11-11T15:05:04.906120876 10265.836641s info: Table a7a63e47-6f00-4fc2-b759-83764a650636: Deleted the table.
+2016-11-11T15:46:01.758510185 12722.689030s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-11T17:30:01.816011723 18962.746531s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
