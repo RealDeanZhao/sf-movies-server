@@ -40,3 +40,24 @@
 2016-11-11T11:06:38.474730575 698.162677s info: Table 7df4c1c1-ab07-421d-9563-f0edfc71e121: Starting a new Raft election for term 1.
 2016-11-11T11:06:38.474989219 698.162935s info: Table 7df4c1c1-ab07-421d-9563-f0edfc71e121: Added replica on this server.
 2016-11-11T11:06:38.477180995 698.165127s info: Table 7df4c1c1-ab07-421d-9563-f0edfc71e121: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T11:25:06.917669531 1806.605616s notice: Removing file /home/dean/CodeRepos/sf-movies-server/rethinkdb_data/7df4c1c1-ab07-421d-9563-f0edfc71e121
+2016-11-11T11:25:06.917709731 1806.605656s info: Table 7df4c1c1-ab07-421d-9563-f0edfc71e121: Deleted the table.
+2016-11-11T11:25:26.994404979 1826.682351s info: Table 4e8ea040-1f62-42e7-b9f3-7f75935e8a08: Starting a new Raft election for term 1.
+2016-11-11T11:25:26.994592851 1826.682539s info: Table 4e8ea040-1f62-42e7-b9f3-7f75935e8a08: Added replica on this server.
+2016-11-11T11:25:26.997401207 1826.685347s info: Table 4e8ea040-1f62-42e7-b9f3-7f75935e8a08: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T11:29:46.066530198 2085.754477s notice: Removing file /home/dean/CodeRepos/sf-movies-server/rethinkdb_data/4e8ea040-1f62-42e7-b9f3-7f75935e8a08
+2016-11-11T11:29:46.066589650 2085.754536s info: Table 4e8ea040-1f62-42e7-b9f3-7f75935e8a08: Deleted the table.
+2016-11-11T11:29:49.908710949 2089.596657s info: Table 90c4ba4c-2b32-4472-b3cf-6ce6642e49a8: Added replica on this server.
+2016-11-11T11:29:49.908785954 2089.596732s info: Table 90c4ba4c-2b32-4472-b3cf-6ce6642e49a8: Starting a new Raft election for term 1.
+2016-11-11T11:29:49.910970151 2089.598916s info: Table 90c4ba4c-2b32-4472-b3cf-6ce6642e49a8: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T11:32:44.916610826 2264.604558s info: Table 9d5520de-ebb6-4f72-a9b6-c26934ce87f3: Starting a new Raft election for term 1.
+2016-11-11T11:32:44.918276801 2264.606223s info: Table 9d5520de-ebb6-4f72-a9b6-c26934ce87f3: Added replica on this server.
+2016-11-11T11:32:44.920909929 2264.608856s info: Table 9d5520de-ebb6-4f72-a9b6-c26934ce87f3: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T11:41:07.368276890 2767.056223s notice: Removing file /home/dean/CodeRepos/sf-movies-server/rethinkdb_data/90c4ba4c-2b32-4472-b3cf-6ce6642e49a8
+2016-11-11T11:41:07.368398330 2767.056344s info: Table 90c4ba4c-2b32-4472-b3cf-6ce6642e49a8: Deleted the table.
+2016-11-11T11:42:27.076796945 2846.764744s notice: Removing file /home/dean/CodeRepos/sf-movies-server/rethinkdb_data/9d5520de-ebb6-4f72-a9b6-c26934ce87f3
+2016-11-11T11:42:27.076904183 2846.764850s info: Table 9d5520de-ebb6-4f72-a9b6-c26934ce87f3: Deleted the table.
+2016-11-11T11:42:33.393779055 2853.081725s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Added replica on this server.
+2016-11-11T11:42:33.393892950 2853.081839s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 1.
+2016-11-11T11:42:33.396118740 2853.084065s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-11T11:44:02.291860312 2941.979806s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Configuration is changing.
