@@ -89,3 +89,23 @@
 2016-11-11T22:53:28.319452046 2.212567s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 2.
 2016-11-11T22:53:28.326143526 2.219259s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 2. Latest log index is 5.
 2016-11-11T22:53:43.159400713 17.052516s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-11-11T23:29:15.966740412 2149.859856s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-11-11T23:29:15.967485862 2149.860601s notice: Shutting down client connections...
+2016-11-11T23:29:15.967764090 2149.860879s notice: All client connections closed.
+2016-11-11T23:29:15.967886702 2149.861002s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-11-11T23:29:15.986268917 2149.879385s notice: Storage engine shut down.
+2016-11-12T08:25:19.266972389 0.166651s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-12T08:25:19.302093854 0.201776s notice: Running on Linux 4.4.0-45-generic x86_64
+2016-11-12T08:25:19.303289388 0.202968s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-12T08:25:19.526138111 0.425816s info: Automatically using cache size of 500 MB
+2016-11-12T08:25:19.539542112 0.439220s notice: Listening for intracluster connections on port 29015
+2016-11-12T08:25:19.688904459 0.588583s notice: Listening for client driver connections on port 28015
+2016-11-12T08:25:19.689700773 0.589379s notice: Listening for administrative HTTP connections on port 8080
+2016-11-12T08:25:19.689702756 0.589381s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-12T08:25:19.689704120 0.589382s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-12T08:25:19.689708316 0.589386s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-12T08:25:19.689709729 0.589388s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-12T08:25:19.689711293 0.589389s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-12T08:25:20.759703860 1.659382s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 3.
+2016-11-12T08:25:20.764615056 1.664293s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 3. Latest log index is 8.
+2016-11-12T08:25:49.718201808 30.617880s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.

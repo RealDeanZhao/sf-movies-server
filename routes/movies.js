@@ -8,8 +8,14 @@ var movieDAL = require('../DAL/movie');
 router.get('/', function (req, res, next) {
     var limit = req.query.limit ? req.query.limit : 50;
     var page = req.query.page ? req.query.page : 1;
+    var title = req.query.title ? req.query.title : '';
+    var query = {
+        limit: limit,
+        page: page,
+        title: title
+    }
 
-    movieDAL.list(limit, page, function (result) {
+    movieDAL.list(query, function (result) {
         if (result.error && result.error !== '') {
             res.status(502).send(result);
         } else {

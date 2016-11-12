@@ -4,14 +4,18 @@ var r = thinky.r;
 var geocoding = require('../utility/geocoding');
 var async = require('async');
 
-exports.list = function (limit, page, callback) {
+exports.list = function (query, callback) {
+    var limit = query.limit;
+    var page = query.page;
+    var title = query.title.trim();
     var result = {};
+    var regex = `(?i)${title}`;
     Movie.orderBy({ index: r.desc('release_year') })
-        .filter({})
+        .filter(r.row("title").match(regex))
         .slice(limit * (page - 1), limit * (page))
         .run().then(function (data) {
             result.data = data;
-            // It is better to retrived the coordinate from the client side.
+            // It is better to retrived the coordinate from the client side. Or we can initialize these information into database first..
             // async.every(result.data, function (movie, innerCallback) {
             //     geocoding.getCoordinate(movie.locations, function (coordinate) {
             //         movie.lat = coordinate.lat;

@@ -6,7 +6,12 @@ var movieDAL = require('../DAL/movie');
 describe('DAL/movie.js', function () {
   describe('#list()', function () {
     it('should get the first 50 records', function (done) {
-      movieDAL.list(50, 1, function (result) {
+      var query = {
+        limit: 50,
+        page: 1,
+        title: ''
+      }
+      movieDAL.list(query, function (result) {
         result.should.be.a('object');
         result.should.have.property('data');
         result.data.should.have.length(50);
@@ -14,13 +19,33 @@ describe('DAL/movie.js', function () {
       });
     });
     it('should get 50 records from the 3rd page', function (done) {
-      movieDAL.list(20, 3, function (result) {
+      var query = {
+        limit: 20,
+        page: 3,
+        title: ''
+      }
+      movieDAL.list(query, function (result) {
         result.should.be.a('object');
         result.should.have.property('data');
         result.data.should.have.length(20);
         done();
       });
-    })
+    });
+    it('should get the records which the title start with Need', function (done) {
+      var query = {
+        limit: 50,
+        page: 1,
+        title: 'Need'
+      }
+      movieDAL.list(query, function (result) {
+        result.should.be.a('object');
+        result.should.have.property('data');
+        for (var movie of result.data) {
+          movie.title.should.contain('Need');
+        }
+        done();
+      });
+    });
   });
 
   describe('#get()', function () {
