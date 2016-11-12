@@ -1,7 +1,7 @@
 # sf-movies-server
 This is only for the server side and the client side repository is [here](https://github.com/zestxjest/sf-movies). Note: Client side is not completed yet.
 
-I don't have much real-large application experience of nodejs from my job. I learn nodejs by some open source projects and I also have some open source project to for learnning and practicing.
+I don't have much real large application experience of nodejs from my work in HPE. I learn nodejs by some open source projects and I also have some open source projects for learnning and practicing.
 
 ## Requirement
 Create a service that shows on a map where movies have been filmed in San Francisco. The
@@ -91,7 +91,7 @@ Creating a pool connected to localhost:28015
   7 passing (266ms)
 ```
 
-## Issues during development
+## Issues during development even rethinkdb was installed
 ### Cannot import the csv data to rethinkdb
 > Solution: Need to install the python rethinkdb driver.
 ```
