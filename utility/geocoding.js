@@ -28,7 +28,7 @@ exports.getCoordinate = function (location, callback) {
 
         callback(coordinate);
     }).catch(function (err) {
-        //console.log(err);
+        console.log(err);
         callback(coordinate);
     })
 }
