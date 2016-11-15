@@ -22,7 +22,11 @@ exports.list = function (query, callback) {
                 });
             }, function (err, innerResult) {
                 result.data = innerResult;
-                callback(result);
+                exports.count(title, function (count) {
+                    result.count = count;
+                    result.totalPage = Math.ceil(count / limit);
+                    callback(result);
+                });
             });
         }).error(function (err) {
             result.data = [];
@@ -115,4 +119,15 @@ exports.delete = function (id, callback) {
         result.error = err;
         callback(result);
     });
+}
+
+exports.count = function (title, callback) {
+    var regex = `(?i)${title}`;
+    Movie.filter(r.row("title")
+        .match(regex))
+        .count()
+        .execute()
+        .then(function (count) {
+            callback(count);
+        });
 }

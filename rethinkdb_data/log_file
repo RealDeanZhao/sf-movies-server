@@ -130,3 +130,21 @@
 2016-11-15T15:06:58.015715289 5.561683s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 4.
 2016-11-15T15:06:58.018561048 5.564529s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 4. Latest log index is 11.
 2016-11-15T15:45:56.329764930 2343.875734s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-15T18:53:56.393800430 13623.939769s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-15T19:53:22.530417931 2.077161s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-15T19:53:22.559011382 2.105757s notice: Running on Linux 4.4.0-47-generic x86_64
+2016-11-15T19:53:22.559052954 2.105795s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-15T19:53:22.744096398 2.290839s info: Automatically using cache size of 752 MB
+2016-11-15T19:53:22.758572674 2.305315s notice: Listening for intracluster connections on port 29015
+2016-11-15T19:53:22.932656229 2.479399s notice: Listening for client driver connections on port 28015
+2016-11-15T19:53:22.933544454 2.480287s notice: Listening for administrative HTTP connections on port 8080
+2016-11-15T19:53:22.933941348 2.480684s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-15T19:53:22.934106454 2.480849s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-15T19:53:22.934311765 2.481055s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-15T19:53:22.934333787 2.481076s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-15T19:53:22.934565116 2.481308s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-15T19:53:24.589856902 4.136600s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 5.
+2016-11-15T19:53:24.595021201 4.141764s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 5. Latest log index is 14.
+2016-11-15T19:53:24.648847715 4.195591s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-11-15T20:35:22.947227777 2522.493971s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-15T22:40:23.023776047 10022.570519s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.

@@ -1,5 +1,5 @@
 # sf-movies-server
-This is only for the server side and the client side repository is [here](https://github.com/zestxjest/sf-movies). Note: Client side is not completed yet.
+This is only for the server side and the client side repository is [here](https://github.com/zestxjest/sf-movies).
 
 I don't have much real large application experience of nodejs from my work in HPE. I learn nodejs by some open source projects and I also have some open source projects for learnning and practicing.
 
@@ -99,6 +99,4 @@ Creating a pool connected to localhost:28015
 ```
 
 ### The original data doesn't have the coordinate information
-> Solution 1: Write a script to get all the coordinate information from GOOGLE and then store it into the database.
-
-> Solution 2: Call GOOGLE API from the client side.
+> Solution: Call Google API after get the movies from the database and then return them back to the client. Note: Google API has the request limitation.
