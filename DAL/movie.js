@@ -131,3 +131,12 @@ exports.count = function (title, callback) {
             callback(count);
         });
 }
+
+exports.suggestions = function (callback) {
+    Movie.filter({}).withFields(['title'])
+        .distinct()
+        .execute()
+        .then(function (suggestions) {
+            callback(suggestions);
+        });
+}

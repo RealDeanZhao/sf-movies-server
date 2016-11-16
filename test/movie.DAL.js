@@ -6,6 +6,7 @@ var movieDAL = require('../DAL/movie');
 describe('DAL/movie.js', function () {
   describe('#list()', function () {
     it('should get the first 50 records', function (done) {
+      this.timeout(0);
       var query = {
         limit: 50,
         page: 1,
@@ -19,6 +20,7 @@ describe('DAL/movie.js', function () {
       });
     });
     it('should get 50 records from the 3rd page', function (done) {
+      this.timeout(0);
       var query = {
         limit: 20,
         page: 3,
@@ -185,6 +187,15 @@ describe('DAL/movie.js', function () {
           innerResult.data.actor_3.should.equal(movie.actor_3);
           done();
         });
+      });
+    });
+  });
+
+  describe('#suggestions()', function () {
+    it('should get the suggestions of the titles', function (done) {
+      movieDAL.suggestions(function (suggestions) {
+        suggestions.should.be.a('array');
+        done();
       });
     });
   });

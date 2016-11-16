@@ -148,3 +148,21 @@
 2016-11-15T19:53:24.648847715 4.195591s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
 2016-11-15T20:35:22.947227777 2522.493971s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
 2016-11-15T22:40:23.023776047 10022.570519s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-16T09:27:18.357598523 2.017468s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-16T09:27:18.394782273 2.054654s notice: Running on Linux 4.4.0-47-generic x86_64
+2016-11-16T09:27:18.394823795 2.054692s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-16T09:27:18.823898264 2.483767s info: Automatically using cache size of 966 MB
+2016-11-16T09:27:18.838100508 2.497969s notice: Listening for intracluster connections on port 29015
+2016-11-16T09:27:19.030887673 2.690756s notice: Listening for client driver connections on port 28015
+2016-11-16T09:27:19.031687287 2.691556s notice: Listening for administrative HTTP connections on port 8080
+2016-11-16T09:27:19.031688532 2.691557s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-16T09:27:19.031690845 2.691559s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-16T09:27:19.031692896 2.691561s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-16T09:27:19.031700846 2.691569s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-16T09:27:19.031703353 2.691572s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-16T09:27:20.297110707 3.956979s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 6.
+2016-11-16T09:27:20.299922821 3.959791s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 6. Latest log index is 17.
+2016-11-16T09:27:20.812561514 4.472430s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-11-16T10:19:19.057084511 3122.716953s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-16T13:26:19.692380213 14343.352249s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-16T14:57:19.720309809 19803.380178s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
