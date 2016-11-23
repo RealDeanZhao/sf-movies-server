@@ -49,7 +49,7 @@ exports.get = function (id, callback) {
 
 exports.create = function (movie, callback) {
     var result = {};
-    var movie = new Movie({
+    var movieToCreate = new Movie({
         title: movie.title,
         release_year: movie.release_year,
         locations: movie.locations,
@@ -63,7 +63,7 @@ exports.create = function (movie, callback) {
         actor_3: movie.actor_3
     });
 
-    movie.save().then(function (data) {
+    movieToCreate.save().then(function (data) {
         result.data = data;
         callback(result);
     }).error(function (err) {

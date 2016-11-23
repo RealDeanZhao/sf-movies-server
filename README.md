@@ -1,3 +1,5 @@
+Seems that I need to return a promise in the DAL rather than using the callback. Then the unit test can know if the method of the Model is actually invoked or not.
+
 # sf-movies-server
 This is only for the server side and the client side repository is [here](https://github.com/zestxjest/sf-movies).
 

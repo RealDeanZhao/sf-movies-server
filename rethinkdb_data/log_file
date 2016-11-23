@@ -166,3 +166,47 @@
 2016-11-16T10:19:19.057084511 3122.716953s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
 2016-11-16T13:26:19.692380213 14343.352249s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
 2016-11-16T14:57:19.720309809 19803.380178s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-23T19:10:00.349341559 2.151041s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-23T19:10:00.377226894 2.178974s notice: Running on Linux 4.4.0-47-generic x86_64
+2016-11-23T19:10:00.377462542 2.179162s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-23T19:10:00.655793952 2.457494s info: Automatically using cache size of 1000 MB
+2016-11-23T19:10:00.658707753 2.460407s notice: Listening for intracluster connections on port 29015
+2016-11-23T19:10:00.851457904 2.653158s notice: Listening for client driver connections on port 28015
+2016-11-23T19:10:00.851640784 2.653340s notice: Listening for administrative HTTP connections on port 8080
+2016-11-23T19:10:00.851645406 2.653345s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:10:00.851692877 2.653392s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:10:00.851694716 2.653394s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:10:00.851696295 2.653396s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-23T19:10:00.851719937 2.653419s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-23T19:10:02.561518506 4.363218s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 7.
+2016-11-23T19:10:02.569740855 4.371441s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 7. Latest log index is 20.
+2016-11-23T19:10:02.599568375 4.401268s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-11-23T19:14:00.823686474 242.625386s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-23T19:29:12.097738893 1153.899439s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-11-23T19:29:12.098011978 1153.899711s notice: Shutting down client connections...
+2016-11-23T19:29:12.116654211 1153.918354s notice: All client connections closed.
+2016-11-23T19:29:12.116761850 1153.918461s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-11-23T19:29:12.134019344 1153.935719s notice: Storage engine shut down.
+2016-11-23T19:39:53.219346703 2.029720s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-23T19:39:53.231900611 2.042279s notice: Running on Linux 4.4.0-47-generic x86_64
+2016-11-23T19:39:53.232171036 2.042545s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-23T19:39:53.295867000 2.106240s info: Automatically using cache size of 100 MB
+2016-11-23T19:39:53.300556393 2.110931s warn: Cache size does not leave much memory for server and query overhead (available memory: 734 MB).
+2016-11-23T19:39:53.300663950 2.111038s warn: Cache size is very low and may impact performance.
+2016-11-23T19:39:53.304826340 2.115199s notice: Listening for intracluster connections on port 29015
+2016-11-23T19:39:53.383509356 2.193882s notice: Listening for client driver connections on port 28015
+2016-11-23T19:39:53.383931210 2.194304s notice: Listening for administrative HTTP connections on port 8080
+2016-11-23T19:39:53.383932538 2.194305s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:39:53.383937129 2.194310s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:39:53.383939349 2.194312s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-23T19:39:53.383946494 2.194320s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-23T19:39:53.383949176 2.194322s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-23T19:39:54.637399699 3.447773s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-11-23T19:39:54.721712149 3.532085s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 8.
+2016-11-23T19:39:54.731388369 3.541762s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 8. Latest log index is 23.
+2016-11-23T20:25:53.405519712 2762.215897s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-11-23T22:27:04.315881533 10033.126255s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2016-11-23T22:27:04.316920895 10033.127294s notice: Shutting down client connections...
+2016-11-23T22:27:04.405171034 10033.215544s notice: All client connections closed.
+2016-11-23T22:27:04.405190003 10033.215563s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-11-23T22:27:04.449188581 10033.259562s notice: Storage engine shut down.
