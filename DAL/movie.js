@@ -60,7 +60,9 @@ exports.create = function (movie, callback) {
         writer: movie.writer,
         actor_1: movie.actor_1,
         actor_2: movie.actor_2,
-        actor_3: movie.actor_3
+        actor_3: movie.actor_3,
+        actors: movie.actors,
+        model_version: movie.model_version
     });
 
     movieToCreate.save().then(function (data) {

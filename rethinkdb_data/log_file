@@ -210,3 +210,19 @@
 2016-11-23T22:27:04.405171034 10033.215544s notice: All client connections closed.
 2016-11-23T22:27:04.405190003 10033.215563s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2016-11-23T22:27:04.449188581 10033.259562s notice: Storage engine shut down.
+2016-11-26T16:11:40.570308333 2.257213s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-11-26T16:11:40.608793212 2.295701s notice: Running on Linux 4.4.0-47-generic x86_64
+2016-11-26T16:11:40.608904238 2.295809s notice: Loading data from directory /home/dean/CodeRepos/sf-movies-server/rethinkdb_data
+2016-11-26T16:11:40.821072423 2.507977s info: Automatically using cache size of 659 MB
+2016-11-26T16:11:40.838264686 2.525169s notice: Listening for intracluster connections on port 29015
+2016-11-26T16:11:41.015978864 2.702883s notice: Listening for client driver connections on port 28015
+2016-11-26T16:11:41.016112443 2.703017s notice: Listening for administrative HTTP connections on port 8080
+2016-11-26T16:11:41.016113267 2.703017s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-26T16:11:41.016115697 2.703020s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-26T16:11:41.016117022 2.703021s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-11-26T16:11:41.016119307 2.703023s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-11-26T16:11:41.016123254 2.703028s notice: Server ready, "ubuntu_brl" eaa0bb5f-c358-451a-af3e-a62628413d43
+2016-11-26T16:11:42.680960791 4.367865s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: Starting a new Raft election for term 9.
+2016-11-26T16:11:42.687283024 4.374188s info: Table cbabce00-3e3f-490f-8b6a-3e93e31c6a9b: This server is Raft leader for term 9. Latest log index is 26.
+2016-11-26T16:11:42.893751203 4.580656s notice: A newer version of the RethinkDB server is available: 2.3.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-11-26T17:12:41.035003753 3662.721908s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
