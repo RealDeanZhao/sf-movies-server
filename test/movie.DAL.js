@@ -2,6 +2,7 @@ var chai = require('chai')
   , should = chai.should();
 
 var movieDAL = require('../DAL/movie');
+var model = require('../models/movie');
 
 describe('DAL/movie.js', function () {
   describe('#list()', function () {
@@ -83,18 +84,31 @@ describe('DAL/movie.js', function () {
         result.should.be.a('object');
         result.should.have.property('data');
         result.data.should.have.property('id');
-        result.data.title.should.equal(movie.title);
-        result.data.release_year.should.equal(movie.release_year);
-        result.data.locations.should.equal(movie.locations);
-        result.data.fun_facts.should.equal(movie.fun_facts);
-        result.data.production_company.should.equal(movie.production_company);
-        result.data.distributor.should.equal(movie.distributor);
-        result.data.director.should.equal(movie.director);
-        result.data.writer.should.equal(movie.writer);
-        result.data.actor_1.should.equal(movie.actor_1);
-        result.data.actor_2.should.equal(movie.actor_2);
-        result.data.actor_3.should.equal(movie.actor_3);
-        done();
+        // Get the movie from the database again to make sure that the movie is actually inserted into the database.
+        model.get(result.data.id).then(function (movieInDb) {
+          result.data.title.should.equal(movieInDb.title);
+          result.data.release_year.should.equal(movieInDb.release_year);
+          result.data.locations.should.equal(movieInDb.locations);
+          result.data.fun_facts.should.equal(movieInDb.fun_facts);
+          result.data.production_company.should.equal(movieInDb.production_company);
+          result.data.distributor.should.equal(movieInDb.distributor);
+          result.data.director.should.equal(movieInDb.director);
+          result.data.writer.should.equal(movieInDb.writer);
+          done();
+        }).error(function (err) {
+          done(err);
+        });
+        // result.data.title.should.equal(movie.title);
+        // result.data.release_year.should.equal(movie.release_year);
+        // result.data.locations.should.equal(movie.locations);
+        // result.data.fun_facts.should.equal(movie.fun_facts);
+        // result.data.production_company.should.equal(movie.production_company);
+        // result.data.distributor.should.equal(movie.distributor);
+        // result.data.director.should.equal(movie.director);
+        // result.data.writer.should.equal(movie.writer);
+        // result.data.actor_1.should.equal(movie.actor_1);
+        // result.data.actor_2.should.equal(movie.actor_2);
+        // result.data.actor_3.should.equal(movie.actor_3);
       });
     });
   });
